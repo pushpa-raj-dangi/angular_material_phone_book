@@ -28,6 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 "# angular_material_phone_book" 
 
 Pages
-contact.PNG
-create.PNG
-homepage.PNG
+
+![Home Page](homepage.PNG)
+![create page](create.PNG)
+![contact page](contact.PNG)
+
