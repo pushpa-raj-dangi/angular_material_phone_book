@@ -1,0 +1,29 @@
+<mat-sidenav-container [class.dark-theme]="isDarkTheme" fullscreen>
+  <mat-sidenav #menu class="example-sidenav" mode="side">
+    <mat-nav-list>
+      <mat-list-item (click)="menu.close()">
+        <a mat-list-item routerLink="/contact">
+          Contacts
+        </a>
+      </mat-list-item>
+      <mat-list-item (click)="menu.close()">
+        <a mat-list-item routerLink="/popular">
+          Popular
+        </a>
+      </mat-list-item>
+    </mat-nav-list>
+    <hr>
+    <button mat-button (click)="menu.close()">Close</button>
+  </mat-sidenav>
+  <mat-toolbar color="primary">
+    <button mat-icon-button>
+      <mat-icon type="button" mat-button (click)="menu.toggle()">menu</mat-icon>
+      {{title}}
+    </button>
+    <span class="space"></span>
+    <button mat-button (click)="isDarkTheme = !isDarkTheme ">Toggle theme</button>
+  </mat-toolbar>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>

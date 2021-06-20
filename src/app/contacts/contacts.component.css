@@ -1,0 +1,14 @@
+.add-contact-fab{
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.example-full-width{
+  width: 100%;
+}
+.mat-form-field{
+  display: block;
+}

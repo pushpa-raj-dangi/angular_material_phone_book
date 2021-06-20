@@ -1,0 +1,16 @@
+.container{
+  padding: 32px;
+}
+.space{
+  flex: 1 1 auto;
+}
+
+.mat-sidenav{
+  width:240px;
+}
+
+@media (max-width:750px){
+  .mat-sidenav{
+    width: 150px;
+  }
+}
